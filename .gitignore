@@ -2,4 +2,4 @@
 # Directories
 env/
 __pycache__/
-
+build/
