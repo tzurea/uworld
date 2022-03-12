@@ -119,7 +119,7 @@ class Sessions(models.Model):
     id = models.IntegerField(primary_key=True)
     createdTime = models.DateTimeField(auto_now=True)
     timeLimit = models.IntegerField(null=True)
-    divisionIds = models.TextField(null=True)
+    topicIds = models.TextField(null=True)
     maxQuestionCount = models.IntegerField(null=True, default=40)
     questionIdList = models.TextField(null=True)
     questionList = models.TextField(null=True)

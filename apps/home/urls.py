@@ -9,7 +9,9 @@ from apps.home import views
 urlpatterns = [
 
     # The home page
+    path('test-drill/', views.topics, name='test-drills'),
     path('', views.index, name='home'),
+    
 
     # Matches any html file
     re_path(r'^.*\.*', views.pages, name='pages'),

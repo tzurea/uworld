@@ -60,8 +60,8 @@ File: style.css
 ==========================  **/
 body {
   font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
-  color: #888;
+  font-size: 16px;
+  color: #000;
   font-weight: 400;
   background: #f4f7fa;
   position: relative;
@@ -127,7 +127,7 @@ strong {
   padding: 0;
 }
 .page-header-title + .breadcrumb > .breadcrumb-item a {
-  color: #888;
+  color: #000000;
 }
 .page-header-title + .breadcrumb > .breadcrumb-item:last-child a {
   color: #111;
@@ -250,7 +250,7 @@ p.text-muted {
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: #888;
+  color: #000000;
 }
 .card .card-header .card-header-right .btn.dropdown-toggle i {
   margin-right: 0;
@@ -354,7 +354,7 @@ p.text-muted {
 }
 .dropdown-menu > li > a {
   padding: 5px;
-  color: #888;
+  color: #000000;
 }
 .dropdown-menu > li > a i {
   font-size: 15px;
@@ -1846,7 +1846,7 @@ p.text-muted {
   font-size: 14px;
 }
 .pcoded-header .dropdown .dropdown-menu li.active a, .pcoded-header .dropdown .dropdown-menu li:active a, .pcoded-header .dropdown .dropdown-menu li:focus a, .pcoded-header .dropdown .dropdown-menu li:hover a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header .dropdown.show:before {
   content: "\63";
@@ -1963,7 +1963,7 @@ p.text-muted {
   list-style: none;
 }
 .pcoded-header .dropdown .profile-notification .pro-body li a {
-  color: #888;
+  color: #000000;
   font-size: 14px;
   padding: 10px 20px;
 }
@@ -2765,13 +2765,13 @@ p.text-muted {
   display: inline-block;
 }
 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*="header-"] .dropdown-menu {
-  color: #888;
+  color: #000000;
 }
 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*="header-"] .dropdown-menu a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*="header-"] .dropdown-menu > li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*="header-"] .dropdown-menu > li.active, .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*="header-"] .dropdown-menu > li:active, .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*="header-"] .dropdown-menu > li:focus, .pcoded-navbar.theme-horizontal ~ .pcoded-header[class*="header-"] .dropdown-menu > li:hover {
   background: rgba(4, 169, 245, 0.1);
@@ -3102,7 +3102,7 @@ p.text-muted {
 .menu-styler {
   z-index: 1029;
   position: relative;
-  color: #888;
+  color: #000000;
 }
 .menu-styler h5,
 .menu-styler h6 {
@@ -3926,7 +3926,7 @@ p.text-muted {
   color: rgba(255, 255, 255, 0.8);
 }
 .pcoded-header.header-blue .profile-notification li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-blue .profile-notification li.active, .pcoded-header.header-blue .profile-notification li:active, .pcoded-header.header-blue .profile-notification li:focus, .pcoded-header.header-blue .profile-notification li:hover {
   background: rgba(4, 169, 245, 0.1);
@@ -3935,17 +3935,17 @@ p.text-muted {
   background: transparent;
 }
 .pcoded-header.header-blue .dropdown-menu {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-blue .dropdown-menu a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-blue .dropdown-menu > li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-blue .dropdown-menu > li.active, .pcoded-header.header-blue .dropdown-menu > li:active, .pcoded-header.header-blue .dropdown-menu > li:focus, .pcoded-header.header-blue .dropdown-menu > li:hover {
   background: rgba(4, 169, 245, 0.1);
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-blue .dropdown-menu > li.active > a, .pcoded-header.header-blue .dropdown-menu > li:active > a, .pcoded-header.header-blue .dropdown-menu > li:focus > a, .pcoded-header.header-blue .dropdown-menu > li:hover > a {
   background: transparent;
@@ -4009,7 +4009,7 @@ p.text-muted {
   color: rgba(255, 255, 255, 0.8);
 }
 .pcoded-header.header-red .profile-notification li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-red .profile-notification li.active, .pcoded-header.header-red .profile-notification li:active, .pcoded-header.header-red .profile-notification li:focus, .pcoded-header.header-red .profile-notification li:hover {
   background: rgba(255, 82, 82, 0.1);
@@ -4018,17 +4018,17 @@ p.text-muted {
   background: transparent;
 }
 .pcoded-header.header-red .dropdown-menu {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-red .dropdown-menu a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-red .dropdown-menu > li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-red .dropdown-menu > li.active, .pcoded-header.header-red .dropdown-menu > li:active, .pcoded-header.header-red .dropdown-menu > li:focus, .pcoded-header.header-red .dropdown-menu > li:hover {
   background: rgba(255, 82, 82, 0.1);
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-red .dropdown-menu > li.active > a, .pcoded-header.header-red .dropdown-menu > li:active > a, .pcoded-header.header-red .dropdown-menu > li:focus > a, .pcoded-header.header-red .dropdown-menu > li:hover > a {
   background: transparent;
@@ -4092,7 +4092,7 @@ p.text-muted {
   color: rgba(255, 255, 255, 0.8);
 }
 .pcoded-header.header-purple .profile-notification li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-purple .profile-notification li.active, .pcoded-header.header-purple .profile-notification li:active, .pcoded-header.header-purple .profile-notification li:focus, .pcoded-header.header-purple .profile-notification li:hover {
   background: rgba(149, 117, 205, 0.1);
@@ -4101,17 +4101,17 @@ p.text-muted {
   background: transparent;
 }
 .pcoded-header.header-purple .dropdown-menu {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-purple .dropdown-menu a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-purple .dropdown-menu > li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-purple .dropdown-menu > li.active, .pcoded-header.header-purple .dropdown-menu > li:active, .pcoded-header.header-purple .dropdown-menu > li:focus, .pcoded-header.header-purple .dropdown-menu > li:hover {
   background: rgba(149, 117, 205, 0.1);
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-purple .dropdown-menu > li.active > a, .pcoded-header.header-purple .dropdown-menu > li:active > a, .pcoded-header.header-purple .dropdown-menu > li:focus > a, .pcoded-header.header-purple .dropdown-menu > li:hover > a {
   background: transparent;
@@ -4175,7 +4175,7 @@ p.text-muted {
   color: rgba(255, 255, 255, 0.8);
 }
 .pcoded-header.header-lightblue .profile-notification li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-lightblue .profile-notification li.active, .pcoded-header.header-lightblue .profile-notification li:active, .pcoded-header.header-lightblue .profile-notification li:focus, .pcoded-header.header-lightblue .profile-notification li:hover {
   background: rgba(35, 183, 229, 0.1);
@@ -4184,17 +4184,17 @@ p.text-muted {
   background: transparent;
 }
 .pcoded-header.header-lightblue .dropdown-menu {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-lightblue .dropdown-menu a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-lightblue .dropdown-menu > li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-lightblue .dropdown-menu > li.active, .pcoded-header.header-lightblue .dropdown-menu > li:active, .pcoded-header.header-lightblue .dropdown-menu > li:focus, .pcoded-header.header-lightblue .dropdown-menu > li:hover {
   background: rgba(35, 183, 229, 0.1);
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-lightblue .dropdown-menu > li.active > a, .pcoded-header.header-lightblue .dropdown-menu > li:active > a, .pcoded-header.header-lightblue .dropdown-menu > li:focus > a, .pcoded-header.header-lightblue .dropdown-menu > li:hover > a {
   background: transparent;
@@ -4258,7 +4258,7 @@ p.text-muted {
   color: rgba(255, 255, 255, 0.8);
 }
 .pcoded-header.header-dark .profile-notification li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-dark .profile-notification li.active, .pcoded-header.header-dark .profile-notification li:active, .pcoded-header.header-dark .profile-notification li:focus, .pcoded-header.header-dark .profile-notification li:hover {
   background: rgba(50, 52, 55, 0.1);
@@ -4267,17 +4267,17 @@ p.text-muted {
   background: transparent;
 }
 .pcoded-header.header-dark .dropdown-menu {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-dark .dropdown-menu a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-dark .dropdown-menu > li > a {
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-dark .dropdown-menu > li.active, .pcoded-header.header-dark .dropdown-menu > li:active, .pcoded-header.header-dark .dropdown-menu > li:focus, .pcoded-header.header-dark .dropdown-menu > li:hover {
   background: rgba(50, 52, 55, 0.1);
-  color: #888;
+  color: #000000;
 }
 .pcoded-header.header-dark .dropdown-menu > li.active > a, .pcoded-header.header-dark .dropdown-menu > li:active > a, .pcoded-header.header-dark .dropdown-menu > li:focus > a, .pcoded-header.header-dark .dropdown-menu > li:hover > a {
   background: transparent;
@@ -5762,7 +5762,7 @@ body.layout-8 .card:hover {
 }
 .note-bar .friendlist-box i {
   opacity: 0.2;
-  color: #888;
+  color: #000000;
 }
 
 .to-do-list h6 {
@@ -7307,6 +7307,9 @@ select.form-control-lg:not([size]):not([multiple]) {
   background-color: rgba(4, 169, 245, 0.05);
 }
 
+.table-hover tbody tr td {
+  max-width : 200px;
+}
 /* Table backgrounds */
 .table .thead-dark th {
   color: #fff;
@@ -8548,7 +8551,7 @@ a.btn-theme.active {
 }
 .nav-tabs .nav-link {
   border: none;
-  color: #888;
+  color: #000000;
 }
 .nav-tabs .nav-link:hover {
   color: #04a9f5;
@@ -10220,7 +10223,7 @@ div.code-toolbar > .toolbar span:hover {
 .dropzone .dz-message {
   text-align: center;
   margin: 4em 0;
-  color: #888;
+  color: #000000;
   font-size: 18px;
 }
 .dropzone .dz-preview {
