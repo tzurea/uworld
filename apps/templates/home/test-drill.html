@@ -32,7 +32,7 @@
                 <!-- [ Main Content ] start -->
                 
                   
-<form method="POST">
+<form  method="POST" action="{% url 'test-sessions' %}">
     <div class="form-group">
         <label for="exampleInputEmail1">Maximum Number of Questions</label>
         <input  class="form-control" name="maxQuestionCount" value="{{ maxQuestionCount }}" placeholder="Enter maximum number of question to drill">

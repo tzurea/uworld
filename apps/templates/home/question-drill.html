@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} UI Tabs {% endblock %} 
+{% block title %} Session {% endblock %} 
 
 <!-- Specific CSS goes HERE -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -50,7 +50,7 @@
                                         <div class="col-md-9 col-sm-12">
                                             <div class="tab-content" id="v-pills-tabContent">
                                             {% for question in questions %}
-                                                <div class="tab-pane fade show active" id="#{{question.questionIndex}}" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <div class="tab-pane fade show active" id="{{question.questionIndex}}" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                                     <div class="col-sm-12">
                                                         
                                                         <hr>
@@ -64,12 +64,41 @@
                                                 
                                                         </ul>
                                                         <div class="tab-content" id="pills-tabContent">
-                                                            <div class="tab-pane fade show active" id="#question-{{question.questionIndex}}" role="tabpanel" aria-labelledby="pills-home-tab">
-                                                                <p class="mb-0">{{question.questionText}}
+                                                            <div class="tab-pane fade show active" id="question-{{question.questionIndex}}" role="tabpanel" aria-labelledby="pills-home-tab">
+                                                                <p class="mb-0">{{question.questionText | safe }} </p>
+                                                                <p class="mb-0">
+
+                                                                    {% for answer in question.answerChoiceList %}
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="{{question.questionIndex}}{{ answer.choiceNumber }}" name="answer-{{question.questionIndex}}" value="{{answer.choiceNumber}}"  class="custom-control-input">
+                                                                        <label class="custom-control-label" for="{{question.questionIndex}}{{ answer.choiceNumber }}" onclick="display_value_{{question.questionIndex}}()">  {{answer.choice | safe}}  </label>
+                                                                    </div>
+        
+                                                                    {% endfor %}
+                                                                    <br>
+                                                                    <div id="radio-answer-check{{question.questionIndex}}" ></div>
+                                                                    <script>
+                                                                        function display_value_{{question.questionIndex}}(){
+                                                                            var radio_element_{{question.questionIndex}} = document.getElementsByName('answer-{{question.questionIndex}}');
+
+                                                                            for(i=0; i< radio_element_{{question.questionIndex}}.length; i++ ){
+                                                                                if (radio_element_{{question.questionIndex}}[i].checked){
+                                                                                if (parseInt(radio_element_{{question.questionIndex}}[i].value) == {{question.correctAnswer}}){
+                                                                                    document.getElementById('radio-answer-check{{question.questionIndex}}').innerHTML = '<button type="button" class="btn btn-success">Correct <span class="badge badge-light">4</span></button>';
+                                                                                    }
+                                                                                    else{
+                                                                                        document.getElementById('radio-answer-check{{question.questionIndex}}').innerHTML =   '<button type="button" class="btn btn-danger"> Wrong <span class="badge badge-light">4</span></button> <span>Correct Answer : {{question.correctAnswer}} </span> <br> ';
+                                                                                    
+                                                                                    }    
+                                                                                
+                                                                            }
+                                                                            }
+                                                                        }
+                                                                    </script>
                                                                 </p>
                                                             </div>
-                                                            <div class="tab-pane fade" id="#explanation-{{question.questionIndex}}" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                                                <p class="mb-0">{{question.explanationText}}
+                                                            <div class="tab-pane fade" id="explanation-{{question.questionIndex}}" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                                <p class="mb-0">{{question.explanationText | safe}}
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -98,6 +127,7 @@
 
 
 {% endblock content %}
+
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}{% endblock javascripts %}

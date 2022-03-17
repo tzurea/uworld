@@ -10,6 +10,7 @@ urlpatterns = [
 
     # The home page
     path('test-drill/', views.topics, name='test-drills'),
+    path('start-test/', views.start_test, name='test-sessions'),
     path('', views.index, name='home'),
     
 

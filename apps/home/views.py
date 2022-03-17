@@ -50,6 +50,14 @@ def pages(request):
 @login_required(login_url="/login/")
 def topics(request):
     topic_link = 'http://192.168.1.100:8000/api/topic-ids/'
+    
+
+    response = requests.get(topic_link).text
+    response = json.loads(response)
+    return render(request, 'home/test-drill.html',{'topics': response})
+
+@login_required(login_url='/login/')
+def start_test(request):
     question_link = 'http://192.168.1.100:8000/api/create-session/'
     if request.method == 'POST':
         form = SessionForm(request.POST)
@@ -70,15 +78,10 @@ def topics(request):
                 break
             i['questionIndex'] =  count
             count = count + 1
+            i['answerChoiceList'] = json.loads(i['answerChoiceList'])
             question_display_list.append(i)
+        
+        
             
         return render(request, 'home/question-drill.html',{'questions': question_display_list})
-    
-    response = requests.get(topic_link).text
-    response = json.loads(response)
-    return render(request, 'home/test-drill.html',{'topics': response})
-
-
-
-
     
